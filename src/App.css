@@ -1,0 +1,496 @@
+#root {
+  /* max-width: 1280px;
+  margin: 0 auto;
+  text-align: center; */
+  color: #fff;
+}
+
+html {
+  overflow: visible;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.mountain2 {
+  display: none;
+}
+
+.container {
+  overflow: hidden;
+  /* max-width: 1200px;
+  margin: 0 auto; */
+}
+
+.header {
+  position: relative;
+  display: flex;
+  min-height: 60vw;
+  background: red;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(https://rare-gallery.com/uploads/posts/501288-mountains-4k.jpg);
+}
+
+.header-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  position: absolute;
+  display: grid;
+  margin: 0 auto;
+  grid-template-rows: 20% 80%;
+}
+
+.nav-container {
+  margin-bottom: 500px;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 100px;
+  align-self: start;
+  justify-self: center;
+}
+
+.btn {
+  /*ESTO ES LA UBICACION DEL ICONO*/
+  position: absolute;
+  justify-self: end;
+  align-self: center;
+  color: #fff;
+}
+
+.btn2 {
+  font-size: 50px;
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+  color: #fff;
+}
+
+.btn3 {
+  position: absolute;
+  font-size: 50px;
+  justify-self: start;
+  align-self: center;
+  color: #fff;
+}
+
+.container2 {
+  width: 100%;
+  display: grid;
+  text-align: center;
+  justify-self: start;
+  align-self: start;
+}
+
+.text {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.text h1 {
+  margin: 10px;
+}
+.text .año2023 {
+  margin-top: 100px;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.main {
+  display: block;
+  width: 100%;
+}
+
+.main1 {
+  background: rgba(23, 38, 44, 255);
+  display: flex;
+}
+
+.main1-container,
+.main2-container {
+  margin: 0 auto;
+  display: block;
+}
+
+.main1-container__adquisicion,
+.main2-container__produccion {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 350px);
+  grid-template-rows: 100px 40px 150px 150px 100px;
+  text-align: center;
+}
+.main1-container__adquisicion h1,
+.main2-container__produccion h1 {
+  grid-row: 1/2;
+  grid-column: 1/4;
+  justify-self: center;
+  align-self: center;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+.main1-container__adquisicion h2,
+.main2-container__produccion h2 {
+  grid-row: 2/3;
+  justify-self: center;
+  align-self: center;
+}
+.subtitulo {
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: justify;
+  margin-left: 40px;
+}
+
+.main1-container__adquisicion img,
+.main2-container__produccion img {
+  justify-self: center;
+  align-self: center;
+  width: 150px;
+  height: 120px;
+  transform: scale(1);
+}
+
+.main1-container__adquisicion p,
+.main2-container__produccion p {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  align-self: center;
+  justify-self: center;
+  font-size: 30px;
+}
+
+.main2 {
+  background: rgb(32, 28, 12);
+  display: flex;
+}
+
+.main2 .hacker {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.main2 .carton {
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.main2 .inversion {
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.main3 {
+  background: rgb(20, 20, 20);
+  display: flex;
+}
+
+.main3-container {
+  margin: 0 auto;
+  display: grid;
+}
+
+.main3-container__transicion {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  margin-top: 20px;
+}
+
+.main3-container__transicion-texto {
+  display: grid;
+  grid-column: 1/2;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px repeat(4, 45px) 80px;
+}
+
+.main3-container__transicion-texto h1,
+.main3-container__apalancamiento-texto h1 {
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.main3-container__transicion-texto li,
+.main3-container__apalancamiento-texto li {
+  font-size: 20px;
+  list-style: square;
+  font-size: 20px;
+  font-weight: 700;
+  align-self: center;
+  text-align: start;
+  padding: 0 25px;
+}
+
+.main3-container__transicion-texto p,
+.main3-container__apalancamiento-texto p {
+  font-size: 25px;
+  justify-self: center;
+  align-self: center;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2rem;
+}
+
+.main3-container__apalancamiento {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.main3-container__apalancamiento-texto {
+  display: grid;
+  grid-column: 2/3;
+  grid-template-columns: 100%;
+  grid-template-rows: 80px repeat(4, 65px) 80px;
+}
+
+.checkpoint {
+  display: grid;
+  font-size: 20px;
+  height: 80px;
+  align-content: center;
+  justify-self: center;
+}
+
+/* HEADER */
+@media (max-width: 768px) {
+  .container {
+    overflow-x: hidden;
+  }
+
+  .btn2,
+  .btn3,
+  .mountain {
+    display: none;
+  }
+  .header {
+    display: flex;
+    max-width: 99.7%;
+  }
+
+  .header-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .nav-container {
+    grid-row: 1/2;
+    margin-bottom: 0;
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .mountain2 {
+    display: block;
+    position: relative;
+    opacity: 0.5;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .btn {
+    /*ESTO ES LA UBICACION DEL ICONO*/
+    margin-right: 30px;
+    margin-top: 60px;
+  }
+
+  .container2 {
+    justify-self: center;
+    align-self: center;
+  }
+  .text {
+    text-transform: uppercase;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  .text h1 {
+    font-size: 40px;
+  }
+  .text h2 {
+    font-size: 25px;
+  }
+  .text p {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .text .año2023 {
+    margin: 0;
+    padding-top: 280px;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+}
+/* MAIN */
+@media (max-width: 768px) {
+  .main1-imagen,
+  .main2-imagen,
+  .tamaño,
+  .main1-container__adquisicion img,
+  .main2-container__produccion img {
+    display: none;
+  }
+  .main {
+    position: absolute;
+  }
+  .main1 {
+    background: rgba(23, 38, 44, 255);
+    display: block;
+    width: 100vw;
+  }
+  .main2 {
+    background: rgb(32, 28, 12);
+    display: block;
+    width: 100vw;
+  }
+  .main3 {
+    width: 100vw;
+    background: rgb(20, 20, 20);
+    display: block;
+  }
+  .main1-container,
+  .main2-container,
+  .main3-container {
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
+  .main1-container__adquisicion,
+  .main2-container__produccion,
+  .main3-container__transicion,
+  .main3-container__apalancamiento {
+    display: block;
+    text-align: start;
+  }
+  .main3-container__transicion,
+  .main3-container__apalancamiento {
+    margin: 10px 0;
+  }
+  .main1-container__adquisicion h1,
+  .main2-container__produccion h1,
+  .main3-container__transicion h1,
+  .main3-container__apalancamiento h1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    margin: 20px 0 25px 0;
+  }
+  .main1-container__adquisicion h2,
+  .main2-container__produccion h2 {
+    margin: 10px;
+    margin-left: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .main3-container__transicion li,
+  .main3-container__apalancamiento li {
+    text-decoration: none;
+    list-style: none;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 0;
+    text-align: start;
+    line-height: 1.5rem;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+  }
+  .main1-container__adquisicion li::before,
+  .main2-container__produccion li::before,
+  .main3-container__transicion li::before,
+  .main3-container__apalancamiento li::before {
+    content: "-";
+    display: inline-block;
+    margin-right: 5px;
+    line-height: 1.5em;
+    vertical-align: middle;
+  }
+  .main1-container__adquisicion li,
+  .main2-container__produccion li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+    text-align: start;
+    line-height: 1.5rem;
+    font-size: 15px;
+    text-align: justify;
+    font-weight: 500;
+  }
+  .main1-container__adquisicion p,
+  .main2-container__produccion p {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+    font-size: 20px;
+  }
+  .main3-container__transicion p,
+  .main3-container__apalancamiento p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .main3-container__transicion-texto,
+  .main3-container__apalancamiento-texto {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 120px repeat(4, 50px) 50px;
+  }
+
+  .checkpoint {
+    display: block;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 30px 20px 30px;
+  }
+  .checkpoint h3 {
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+}
+
+/* @keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+} */
