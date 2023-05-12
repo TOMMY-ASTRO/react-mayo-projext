@@ -3,40 +3,27 @@ import React from "react";
 function About() {
   return (
     <>
-      {/* <header className="header">
-        <img
-          className="mountain"
-          src="https://rare-gallery.com/uploads/posts/501288-mountains-4k.jpg"
-          alt="Mountain1"
-        />
-        <div className="header-container">
-          <nav className="nav-container">
-            <div role="button" className="btn">
-              <Navbar />
-            </div>
-            <div role="button" className="btn2">
-              <i className="bx bx-pulse"></i>
-            </div>
-            <div role="button" className="btn3">
-              <i className="bx bxs-cookie"></i>
-            </div>
-          </nav>
-          <div className="container2">
-            <div className="text">
-              <h1>WHOAMI?</h1>
-              <h2>I am Joe Morgan</h2>
-              <h1>WHAT I WANT IN THIS LIVE?</h1>
-              <p>I just want to live and be what i want to be</p>
-              <h1 className="año2023">2023</h1>
+      <section className="about">
+        <div className="container">
+          <div className="about-block">
+            <div className="container2">
+              <div className="text">
+                <h1>WHOAMI?</h1>
+                <h2>I am Joe Morgan</h2>
+                <h1>WHAT I WANT IN THIS LIVE?</h1>
+                <p>I just want to live and be what i want to be</p>
+                <h1 className="año2023">2023</h1>
+              </div>
             </div>
           </div>
         </div>
-        <img
+        {/* <img
           className="mountain2"
           src="https://i.pinimg.com/564x/a8/40/6f/a8406ff705cb883fdcabb3db58387ed8.jpg"
           alt="mountain2"
-        />
-      </header> */}
+        /> */}
+      </section>
+
       <main className="main">
         <div className="main1">
           <div className="main1-container">

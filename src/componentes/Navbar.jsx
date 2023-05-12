@@ -45,6 +45,8 @@ const NavContainer = styled.nav`
 
   // ESTO ES ANTES DE DARLE CLICK
   .links {
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     top: 100px;
     left: -6000px;
@@ -76,14 +78,11 @@ const NavContainer = styled.nav`
 
   // ESTO ES DESPUES DE DARLE CLICK
   .links.active {
+    opacity: 1;
+    visibility: visible;
     width: 100%;
     display: block;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 100px;
     left: 0;
-    right: 0;
     text-align: center;
     a {
       font-size: 2rem;

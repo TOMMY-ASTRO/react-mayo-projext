@@ -1,4 +1,4 @@
-import "normalize.css";
+import "../componentes/normalize.css";
 
 function Home() {
   return (
